@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://fly.io/apps/ci-cd-test-n2z",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
