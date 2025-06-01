@@ -1,0 +1,23 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.increment {
+  border: 1px solid #ededed;
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.increment:hover {
+  background-color: #ededed;
+}
+
+.increment:active {
+  transform: scale(0.9);
+}
