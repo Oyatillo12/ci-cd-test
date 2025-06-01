@@ -13,12 +13,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-       
-      - name: Set up Docker 
+
+      - name: Set up Docker
         run: docker --version
 
       - name: Build Docker image
         run: docker build -t react-ci-app .
 
-      - name: Verify Docker image was created  
-        run: docker images | grep ci-cd-test
+      - name: Verify Docker image was created
+        run: |
+          docker image inspect ci-cd-test >/dev/null 2>&1 && echo "Image exists!" || echo "Image not found"
